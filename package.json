@@ -1,0 +1,20 @@
+{
+  "name": "hubot-skeleton",
+  "version": "1.0.0",
+  "description": "a simple skeleton for an empty shell hubot instance",
+  "main": "./node_modules/.bin/coffee ./node_modules/.bin/hubot",
+  "scripts": {
+    "bot": "./node_modules/.bin/coffee ./node_modules/.bin/hubot"
+  },
+  "keywords": [
+    "hubot"
+  ],
+  "author": "erik.zaadi@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "coffee": "2.1.0",
+    "hubot": "2.17.0",
+    "hubot-help": "0.1.2",
+    "hubot-redis-brain": "0.0.3"
+  }
+}
