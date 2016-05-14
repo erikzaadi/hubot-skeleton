@@ -2,10 +2,10 @@
 //   Example script that replies to WAT, and interacts with the (redis) robot brain
 //
 // Dependencies:
-//   
+//
 //
 // Configuration:
-//   
+//
 //
 // Commands:
 //   @hubot WAT - answers ZOMG ZOMG ZOMG
@@ -23,7 +23,7 @@ module.exports = function (robot) {
     res.reply("ZOMG ZOMG ZOMG");
   });
 
-  robot.respond(/store (\w) (\w)/i, function(res){
+  robot.respond(/store ([\w]{1,}) ([\w]{1,})/i, function(res){
     var key = res.match[1];
     var val = res.match[2];
 
@@ -31,7 +31,7 @@ module.exports = function (robot) {
     res.reply("Done!");
   });
 
-  robot.respond(/get (\w)/i, function(res){
+  robot.respond(/get ([\w]{1,})/i, function(res){
     var key = res.match[1];
 
     res.reply(robot.brain.get(key) || ("'" + key + "' Not set"));

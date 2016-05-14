@@ -18,7 +18,20 @@ In the Hubot REPL:
 hubot help
 ```
 
+#### To run tests
+
+```
+npm test
+```
+
 #### Examples:
 
-[Bare JS](./scripts/bare.js) - How to respond to a user mention, and how to interact with the Hubot robot brain (redis)
+##### Code:
+
+[Bare JS](./scripts/bare.js) - How to respond to a user mention, and how to interact with the Hubot robot brain (redis if available)
 [CoffeeScript](./scripts/simple-example.coffee) - How to listen to strings in chat room and how to listen to HTTP calls
+
+##### Tests:
+
+[Bare JS](./tests/test-bar.js) - Test redis brain, and responding to messages
+[CoffeeScript](./tests/test-simple-example.coffee) - Test http integration, and hearing messages
